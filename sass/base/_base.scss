@@ -1,0 +1,19 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+$bp-largest: 87.5em; // 1400px
+$bp-large: 71.875em;
+$bp-medium: 50em;
+$bp-small: 37.5em;

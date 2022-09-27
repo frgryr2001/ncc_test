@@ -1,0 +1,8 @@
+.wrapper {
+  display: flex;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+  min-height: 100vh;
+  position: relative;
+}

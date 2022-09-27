@@ -1,0 +1,195 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.875rem;
+  color: #000000;
+}
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+}
+@media only screen and (max-width: 37.5em) {
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+}
+@media only screen and (max-width: 71.875em) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 50em) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.main {
+  margin-bottom: 2rem;
+}
+
+.main-content {
+  padding: 0 9rem;
+  flex: 1;
+}
+@media only screen and (max-width: 87.5em) {
+  .main-content {
+    padding: 0 2rem;
+  }
+}
+.main-content .logo {
+  width: 290px;
+  height: 100px;
+  object-fit: contain;
+  display: block;
+  margin: 2rem auto 1.5rem;
+}
+.main-content .description {
+  background-color: #efefef;
+  margin-bottom: 2rem;
+  padding: 3.8rem 8rem 3.8rem;
+}
+@media only screen and (max-width: 50em) {
+  .main-content .description {
+    padding: 2.4rem 4.4rem 2.4rem;
+    text-indent: 0rem;
+  }
+}
+.main-content .description__title {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.109rem;
+}
+.main-content .description__text {
+  text-indent: 3rem;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  margin-top: 1.8rem;
+}
+.main-content .card {
+  overflow-wrap: break-word;
+}
+.main-content .card__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 2.813rem;
+  margin-bottom: 1rem;
+}
+.main-content .card__body {
+  display: flex;
+  font-size: 1.6rem;
+  column-gap: 0.8rem;
+  line-height: 1.875rem;
+}
+.main-content .card__text {
+  word-wrap: break-word;
+}
+.main-content .card__footer {
+  line-height: 1.875rem;
+  font-size: 1.6rem;
+}
+
+.footer {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.875rem;
+  background-color: #ffffff;
+  padding: 1.5rem 9rem 1.5rem;
+  margin-top: 3rem;
+}
+@media only screen and (max-width: 87.5em) {
+  .footer {
+    padding: 0.5rem 2rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  body .nav-open .sidebar {
+    display: block;
+  }
+}
+
+.sidebar {
+  flex: 0 0 150px;
+  min-height: 100vh;
+  color: #aaaaaa;
+  transition: all 0.5s ease-in;
+  font-weight: 700;
+  font-size: 1.6rem;
+  background-color: #191718;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 37.5em) {
+  .sidebar {
+    display: none;
+    min-height: auto;
+  }
+}
+.sidebar__menu {
+  list-style: none;
+  line-height: 1.875rem;
+}
+.sidebar__menu-item {
+  height: 44px;
+  padding: 1.4rem 0 0 1.6rem;
+  border-bottom: 1px solid #5c5c5c;
+  transition: background-color 0.1s ease-in;
+}
+.sidebar__menu-item:hover {
+  background-color: #5c5c5c;
+  color: #ffffff;
+}
+.sidebar__menu-item--active {
+  color: #ffffff;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .hamburger-menu {
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 1.5rem;
+    cursor: pointer;
+  }
+}
+.hamburger-menu__line {
+  width: 30px;
+  height: 3px;
+  background-color: #191718;
+  margin: 5px 0;
+  transition: 0.4s;
+}

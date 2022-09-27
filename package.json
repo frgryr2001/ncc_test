@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  },
+  "name": "test_ncc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss assets/css/style.css -w"
+  },
+  "author": "Le Hoang Nhan",
+  "license": "ISC",
+  "description": "tess-ncc"
+}
